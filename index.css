@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(60, 65, 75);
+}
+
+#board {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  flex-direction: column;
+  background-color: rgb(100, 100, 100);
+  padding: 30px;
+  box-shadow: 0 0 12px 1px rgb(165, 150, 180);
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px;
+  color: blue;
+  font-weight: 500;
+  padding: 4px;
+  user-select: none;
+  box-shadow: inset 0 0 2px 1px rgb(50, 25, 100);
+}
+
+.unhidden {
+  background-color: rgb(219, 255, 250);
+  border: none;
+}
+
+.hidden {
+  background-color: rgb(165, 150, 180);
+}
+
+.bomb {
+  background-color: rgb(200, 25, 70);
+}
+
+#reset-btn {
+  padding: 6px;
+  font-size: 28px;
+  background-color: rgb(165, 150, 180);
+  box-shadow: 0 0 4px 2px rgb(50, 25, 100);
+  cursor: pointer;
+}
+
+#reset-btn:active {
+  box-shadow: inset 2px 2px 3px 1px rgb(50, 25, 100);
+  transform: translate(3%, 3%);
+}
+
+.one {
+  color: blue;
+}
+
+.two {
+  color: darkgreen;
+}
+
+.three {
+  color: red;
+}
+
+.four {
+  color: darkblue;
+}
+
+.five {
+  color: darkred;
+}
+
+.six {
+  color: teal;
+}
+
+.seven {
+  color: black;
+}
+
+.eight {
+  color: purple;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#counter,
+#timer {
+  background-color: rgb(165, 150, 180);
+  border: none;
+  font-size: 28px;
+  padding: 10px;
+  box-shadow: 0 0 4px 2px rgb(50, 25, 100);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  color: rgb(89, 0, 206);
+}
